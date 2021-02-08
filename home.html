@@ -32,7 +32,7 @@ body{
     </style>
     <script >
 
-fetch("http://127.0.0.1:8000/memes")
+fetch("https://hxmeme.herokuapp.com/memes")
     .then(data => data.json())
     .then(data => {
         data.forEach((u)=>{
@@ -82,7 +82,7 @@ fetch("http://127.0.0.1:8000/memes")
 <script>
     function check(event) {
             event.preventDefault();
-  fetch('http://127.0.0.1:8000/memes', {
+  fetch('https://hxmeme.herokuapp.com/memes', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',
